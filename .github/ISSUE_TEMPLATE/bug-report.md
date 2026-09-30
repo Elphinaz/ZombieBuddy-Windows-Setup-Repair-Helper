@@ -1,19 +1,11 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: BUG
+name: BUG REPORT
+about: Report a problem with the ZombieBuddy Windows Setup / Repair Helper
+title: "[BUG]"
 labels: bug
 assignees: ''
 type: Bug
 
----
-
----
-name: Bug report
-about: Report a problem with the ZombieBuddy Windows Setup / Repair Helper
-title: "[BUG] "
-labels: bug
-assignees: ''
 ---
 
 ## Describe the problem
@@ -43,7 +35,9 @@ Describe the expected result.
 
 ## Environment
 
-**Project Zomboid version:**
+**ZombieBuddy Helper version:**
+
+**Project Zomboid version / build:**
 
 **Windows version:**
 
@@ -62,9 +56,11 @@ Please confirm:
 
 If possible, run:
 
-**Option 1 — Diagnose installation only**
+**Option 1: Diagnose installation only**
 
 Then paste the relevant output below.
 
 ```text
 Paste diagnostic output here
+
+```
