@@ -113,24 +113,24 @@ powershell -ExecutionPolicy Bypass -File ".\ZombieBuddy-Windows-Setup-Repair-Hel
 
 The helper provides the following options:
 
-### 1 — Diagnose installation only (NO CHANGES)
+### 1. Diagnose installation only (NO CHANGES)
 
 Checks the installation without modifying any files.
 
-### 2 — Install / repair base ZombieBuddy
+### 2. Install / repair base ZombieBuddy
 
 Locates and installs Zed's:
 
 - `ZombieBuddy.jar`
 - `zbNative.dll`
 
-### 3 — Apply temporary B42.21 patch
+### 3. Apply temporary B42.21 patch
 
 Backs up the currently installed `ZombieBuddy.jar` and replaces only that file with the patched JAR.
 
 `zbNative.dll` is not changed.
 
-### 4 — Full setup: base ZombieBuddy + B42.21 patch
+### 4. Full setup: base ZombieBuddy + B42.21 patch
 
 Performs the complete setup in the correct order:
 
@@ -141,7 +141,7 @@ Performs the complete setup in the correct order:
 5. Install the temporary B42.21 patched JAR.
 6. Verify the patched JAR.
 
-### 5 — Show required launch option / final checklist
+### 5. Show required launch option / final checklist
 
 Displays the remaining setup information.
 
