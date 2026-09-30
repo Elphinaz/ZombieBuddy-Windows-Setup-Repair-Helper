@@ -1,66 +1,114 @@
----
 name: BUG REPORT
-about: Report a problem with the ZombieBuddy Windows Setup / Repair Helper
-title: "[BUG]"
-labels: bug
-assignees: ''
+description: Report a problem with the ZombieBuddy Windows Setup / Repair Helper
+title: "[BUG] "
+labels:
+  - bug
 type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem with the ZombieBuddy Windows Setup / Repair Helper.
+        Please complete the fields below so the issue can be diagnosed more easily.
 
----
+  - type: textarea
+    id: problem
+    attributes:
+      label: Describe the problem
+      description: Please describe clearly what went wrong.
+      placeholder: Explain what happened...
+    validations:
+      required: true
 
-## Describe the problem
+  - type: dropdown
+    id: action
+    attributes:
+      label: What were you trying to do?
+      description: Which helper option were you using?
+      options:
+        - Diagnose installation only
+        - Install / repair base ZombieBuddy
+        - Apply temporary B42.21 patch
+        - Full setup
+        - Show required launch option / final checklist
+        - Other
+    validations:
+      required: true
 
-Please describe clearly what went wrong.
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Describe what the helper displayed or did.
+      placeholder: Describe the actual result...
+    validations:
+      required: true
 
-## What were you trying to do?
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: Describe the expected result.
+      placeholder: Describe what you expected instead...
+    validations:
+      required: true
 
-Which helper option were you using?
+  - type: input
+    id: helper_version
+    attributes:
+      label: ZombieBuddy Helper version
+      placeholder: e.g. 1.0.0
 
-- [ ] Diagnose installation only
-- [ ] Install / repair base ZombieBuddy
-- [ ] Apply temporary B42.21 patch
-- [ ] Full setup
-- [ ] Show required launch option / final checklist
-- [ ] Other
+  - type: input
+    id: pz_version
+    attributes:
+      label: Project Zomboid version / build
+      placeholder: e.g. Build 42.21
+    validations:
+      required: true
 
-If other, please explain:
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version
+      placeholder: e.g. Windows 11 24H2
+    validations:
+      required: true
 
-## What happened?
+  - type: input
+    id: steam_path
+    attributes:
+      label: Steam installation path
+      description: Only include this if relevant.
+      placeholder: e.g. C:\Program Files (x86)\Steam
 
-Describe what the helper displayed or did.
+  - type: checkboxes
+    id: workshop
+    attributes:
+      label: Required Workshop items
+      description: Please confirm the following.
+      options:
+        - label: Original ZombieBuddy is subscribed
+        - label: Temporary B42.21 compatibility patch is subscribed
+        - label: Steam finished downloading both Workshop items
+        - label: Project Zomboid was closed while making installation changes
 
-## What did you expect to happen?
+  - type: textarea
+    id: diagnostic
+    attributes:
+      label: Diagnostic output
+      description: If possible, run "Option 1 — Diagnose installation only" and paste the relevant output.
+      render: text
+      placeholder: Paste diagnostic output here
 
-Describe the expected result.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots if they help explain the problem.
 
-## Environment
-
-**ZombieBuddy Helper version:**
-
-**Project Zomboid version / build:**
-
-**Windows version:**
-
-**Steam installation path, if relevant:**
-
-## Required Workshop items
-
-Please confirm:
-
-- [ ] Original ZombieBuddy is subscribed
-- [ ] Temporary B42.21 compatibility patch is subscribed
-- [ ] Steam finished downloading both Workshop items
-- [ ] Project Zomboid was closed while making installation changes
-
-## Diagnostic output
-
-If possible, run:
-
-**Option 1: Diagnose installation only**
-
-Then paste the relevant output below.
-
-```text
-Paste diagnostic output here
-
-```
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add anything else that may help reproduce or diagnose the problem.
